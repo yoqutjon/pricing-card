@@ -3,77 +3,253 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pricing</title>
+    <title>Noiceland</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        tenor: ['Tenor Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+<body class="bg-white">
 
-<section class="max-w-5xl w-full px-6 py-12">
+<main class="pt-24">
 
-    <div class="text-center mb-10">
-        <h2 class="text-3xl font-semibold text-gray-700">Our Pricing</h2>
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+            <div class="text-xl font-black tracking-wide">NOICELAND</div>
+            <nav class="space-x-8 text-sm text-gray-600">
+                <a href="">Home</a>
+                <a href="">Latest</a>
+                <a href="">About</a>
+            </nav>
+        </div>
+    </header>
 
-        <div class="flex items-center justify-center gap-3 mt-4 text-gray-500">
-            <span>Annually</span>
+    <section class="max-w-6xl mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <img src="img/IMAGE.png" alt="nature" class="w-full h-[400px] object-cover">
 
-            <div class="w-12 h-6 bg-indigo-400 rounded-full relative">
-                <div class="w-5 h-5 bg-white rounded-full absolute top-0.5 right-0.5"></div>
+            <div>
+                <span class="text-xs tracking-widest text-gray-400">ILLUSTRATION</span>
+                <h1 class="text-3xl md:text-4xl font-tenor mt-4">
+                    JAPAN HOUSE OPENS <br> IN MOUNTAINSIDE TO <br> FOSTER PEAK <br> CREATIVITY.
+                </h1>
+                <p class="text-gray-600 text-sm leading-relaxed mt-4 mb-6">
+                    Enim omittam qui id, ex quo atqui dictas complectitur. <br> Nec ad timeam accusata, hinc justo falli id eum, ferri
+                    <br> novum molestie eos cu.
+                </p>
+                <span class="text-xs tracking-widest font-bold">BY RETA TORPHY</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-16 bg-white">
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
+
+            <div class="space-y-4">
+                <img src="img/IMAGE (1).png" alt="city" class="w-full h-[300px] object-cover">
+                <p class="text-xs tracking-widest text-gray-400 uppercase">Photography</p>
+                <h2 class="font-tenor text-xl tracking-wider">
+                    Helmut Lang Celebrates <br> Taxi Drivers Worldwide In <br> Latest Campaign
+                </h2>
+                <p class="text-xs font-bold tracking-widest uppercase">
+                    By Alessandra Ortiz
+                </p>
             </div>
 
-            <span>Monthly</span>
+            <div class="space-y-4">
+                <img src="img/IMAGE (2).png" alt="foods" class="w-full h-[300px] object-cover">
+                <p class="text-xs tracking-widest text-gray-400 uppercase">Photography</p>
+                <h2 class="font-tenor text-xl tracking-wider">
+                    Bowlcut launch a new <br> summer collection that pays <br> homage to “UK legends”
+                </h2>
+                <p class="text-xs font-bold tracking-widest uppercase">
+                    By Rosanna Ondricka
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <img src="img/IMAGE (4).png" alt="mountain" class="w-full h-[300px] object-cover">
+                <p class="text-xs tracking-widest text-gray-400 uppercase">Photography</p>
+                <h2 class="font-tenor text-xl tracking-wider">
+                    Thousands of previously <br> unseen photographs by Andy <br> Warhol will be made public <br> this Autumn                </h2>
+                <p class="text-xs font-bold tracking-widest uppercase">
+                    By Annie Luleiwitz
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <img src="img/IMAGE (5).png" alt="peoples" class="w-full h-[300px] object-cover">
+                <p class="text-xs tracking-widest text-gray-400 uppercase">Photography</p>
+                <h2 class="font-tenor text-xl tracking-widest">
+                    London-based Yinka Ilori’s <br> storytelling furniture
+                </h2>
+                <p class="text-xs font-bold tracking-wider uppercase">
+                    By Alessandra Ortiz
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <img src="img/IMAGE (7).png" alt="people" class="w-full h-[300px] object-cover">
+                <p class="text-xs tracking-widest text-gray-400 uppercase">Photography</p>
+                <h2 class="font-tenor text-xl tracking-wider">
+                    Anonymous Israeli art collective Broken Fingaz direct music video
+                </h2>
+                <p class="text-xs font-bold tracking-widest uppercase">
+                    By Rosanna Ondricka
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <img src="img/IMAGE (8).png" alt="snow" class="w-full h-[300px] object-cover">
+                <p class="text-xs tracking-widest text-gray-400 uppercase">Photography</p>
+                <h2 class="font-tenor text-xl tracking-wider">
+                    Suzanne Saroff’s meticulously <br> arranged photographs alter <br> perceptions
+                </h2>
+                <p class="text-xs font-bold tracking-widest uppercase">
+                    By Annie Luleiwitz
+                </p>
+            </div>
+
         </div>
+
+        <div class="flex justify-center mt-16">
+            <button class="border border-black px-10 py-2 text-xs tracking-widest hover:bg-black hover:text-white transition">
+                VIEW ALL LATEST POSTS
+            </button>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 mt-20">
+
+            <div class="space-y-4">
+                <img src="img/IMAGE (9).png" alt="football" class="w-full h-[400px] object-cover">
+                <p class="text-gray-500 text-xs tracking-widest">Graphic Design</p>
+                <h2 class="font-tenor text-xl">
+                    A Brief History of the FIFA World Cup Logo
+                </h2>
+                <p class="font-bold text-xs">
+                    BY CLEM ONOJEGHUO
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <img src="img/IMAGE (10).png" alt="people" class="w-full h-[400px] object-cover">
+                <p class="text-gray-500 text-xs tracking-widest">Graphic Design</p>
+                <h2 class="font-tenor text-xl tracking-wider">
+                    Need a guide to LA’s graphic design scene? <br> Shoplifters’ new issue has got your back                </h2>
+                <p class="font-bold text-xs">
+                    BY Alessandra Ortiz
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <img src="img/IMAGE%20(12).png" alt="football" class="w-full h-[400px] object-cover">
+                <p class="text-gray-500 text-xs tracking-widest">Graphic Design</p>
+                <h2 class="font-tenor text-xl">
+                    Fred Rowson directs film for Years and Years
+                </h2>
+                <p class="font-bold text-xs">
+                    BY Coby Gottlieb
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <img src="img/IMAGE%20(13).png" alt="people" class="w-full h-[400px] object-cover">
+                <p class="text-gray-500 text-xs tracking-widest">Graphic Design</p>
+                <h2 class="font-tenor text-xl tracking-wider">
+                    M&C Saatchi and Fontsmith collaborate on <br> font collection for House of St Barnabas
+                </h2>
+                <p class="font-bold text-xs">
+                    BY Annie Lueilwitz
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+<footer class="bg-black text-gray-400 mt-24">
+    <div class="max-w-6xl mx-auto px-6 py-16">
+
+        <!-- TOP -->
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between border-b border-gray-800 pb-8">
+            <div class="flex items-center space-x-6">
+                <h2 class="text-white text-xl font-bold tracking-wide">NOICELAND</h2>
+                <p class="text-xs text-gray-500">
+                     2018 NOICELAND, ALL RIGHTS RESERVED
+                </p>
+            </div>
+
+            <div class="mt-6 md:mt-0">
+                <p class="text-xs tracking-widest mb-3">SUBSCRIBE TO NEWSLETTER</p>
+                <div class="flex">
+                    <input type="email" placeholder="EMAIL ADDRESS" class="px-4 py-2 text-black text-xs w-64 focus:outline-none">
+                    <button class="bg-gray-800 text-white px-6 text-xs tracking-widest hover:bg-white hover:text-black transition">
+                        SEND
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mt-12 text-sm">
+
+            <div>
+                <h3 class="text-xs text-gray-500 tracking-widest mb-4">CATEGORIES</h3>
+                <ul class="space-y-2">
+                    <li>Animation</li>
+                    <li>Interactive Design</li>
+                    <li>Architecture</li>
+                    <li>Miscellaneous</li>
+                    <li>Graphic Design</li>
+                    <li>Photography</li>
+                    <li>Illustration</li>
+                    <li>Product Design</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xs text-gray-500 tracking-widest mb-4">INFORMATION</h3>
+                <ul class="space-y-2">
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xs text-gray-500 tracking-widest mb-4">FOLLOW US</h3>
+                <ul class="space-y-2">
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xs text-gray-500 tracking-widest mb-4">TEMPLATE</h3>
+                <ul class="space-y-2">
+                    <li>Image License Info</li>
+                    <li>Powered by Webflow</li>
+                </ul>
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="grid md:grid-cols-3 gap-6">
-
-        <div class="bg-white rounded-2xl shadow p-8 text-center">
-            <h3 class="text-gray-600 font-medium">Basic</h3>
-            <p class="text-4xl font-bold text-gray-800 mt-4">$199.99</p>
-
-            <ul class="mt-6 space-y-3 text-gray-500 text-sm">
-                <li>500 GB Storage</li>
-                <li>2 Users Allowed</li>
-                <li>Send up to 3 GB</li>
-            </ul>
-
-            <button class="mt-8 w-full py-3 rounded-xl bg-indigo-500 text-white font-medium">
-                Learn More
-            </button>
-        </div>
-
-        <div class="bg-indigo-500 rounded-2xl shadow-lg p-8 text-center text-white scale-105">
-            <h3 class="font-medium">Professional</h3>
-            <p class="text-4xl font-bold mt-4">$249.99</p>
-
-            <ul class="mt-6 space-y-3 text-indigo-100 text-sm">
-                <li>1 TB Storage</li>
-                <li>5 Users Allowed</li>
-                <li>Send up to 10 GB</li>
-            </ul>
-
-            <button class="mt-8 w-full py-3 rounded-xl bg-white text-indigo-600 font-medium">
-                Learn More
-            </button>
-        </div>
-
-        <div class="bg-white rounded-2xl shadow p-8 text-center">
-            <h3 class="text-gray-600 font-medium">Master</h3>
-            <p class="text-4xl font-bold text-gray-800 mt-4">$399.99</p>
-
-            <ul class="mt-6 space-y-3 text-gray-500 text-sm">
-                <li>2 TB Storage</li>
-                <li>10 Users Allowed</li>
-                <li>Send up to 20 GB</li>
-            </ul>
-
-            <button class="mt-8 w-full py-3 rounded-xl bg-indigo-500 text-white font-medium">
-                Learn More
-            </button>
-        </div>
-
-    </div>
-</section>
+</footer>
 
 </body>
 </html>
